@@ -8,6 +8,7 @@ public class ThreeDMatrix {
             for (j = 0; j < 4; j++)
                 for (k = 0; k < 5; k++)
                     threeD[i][j][k] = i * j * k;
+
         for (i = 0; i < 3; i++) {
             for (j = 0; j < 4; j++) {
                 for (k = 0; k < 5; k++)
@@ -16,5 +17,7 @@ public class ThreeDMatrix {
             }
             System.out.println();
         }
+        }
     }
-}
+
+
