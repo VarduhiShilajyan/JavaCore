@@ -1,13 +1,14 @@
-public class Homework {
-    public static void main(String[] args) {
+package Chapter3;
 
-        for (int i = 0; i < 5; i++) {
+public class Figure {
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 4; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print(" # ");
             }
             System.out.println();
-
         }
-    }
 
+    }
 }
