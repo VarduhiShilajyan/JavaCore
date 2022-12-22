@@ -1,6 +1,4 @@
-package Homework;
-
-import java.sql.SQLOutput;
+package Homework1;
 
 public class CharExample1 {
     public static void main(String[] args) {
