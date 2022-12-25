@@ -37,7 +37,7 @@ public class ArrayUtil {
         System.out.println("first element is " + array[0]);
 
         int lastIndex = array.length - 1;
-        System.out.println("last elemen is " + array[lastIndex]);
+        System.out.println("last element is " + array[lastIndex]);
 
         System.out.println();
 
@@ -71,7 +71,7 @@ public class ArrayUtil {
             }
 
         }
-        System.out.println("զույգ թվերի քնակը " + y);
+        System.out.println("զույգ թվերի քանակը " + y);
 
         System.out.println();
 
@@ -84,11 +84,14 @@ public class ArrayUtil {
             }
 
         }
-        System.out.println("կենտ թվերի քնակն է " + x);
+        System.out.println("կենտ թվերի քանակն է " + x);
 
         System.out.println();
 
-
+        int HalfIndex= array.length/2;
+        {
+            System.out.println("half element is" + array[HalfIndex]);
+        }
     }
 
 
