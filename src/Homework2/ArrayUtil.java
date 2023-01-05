@@ -36,6 +36,8 @@ public class ArrayUtil {
 
         System.out.println("first element is " + array[0]);
 
+        System.out.println( );
+
         int lastIndex = array.length - 1;
         System.out.println("last element is " + array[lastIndex]);
 

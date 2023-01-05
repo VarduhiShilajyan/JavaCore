@@ -16,13 +16,19 @@ public class CharArrayExample {
 
         System.out.println();
 
-        int halfIndex=(chars.length/2);
-        int halfIndex2=((chars.length/2)-1);{
-            System.out.println("half elements are  " + chars[halfIndex] + " & " +chars[halfIndex2]);
+        int halfIndex = (chars.length / 2);
+        int halfIndex2 = ((chars.length / 2) - 1);
+        {
+            System.out.println("half elements are  " + chars[halfIndex] + " & " + chars[halfIndex2]);
 
-        }
+        }// տպել մեջտեղի 2 էլեմենտը
+
+        System.out.println();
+
+        char[] text = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y'};
+
+
 
     }
-
 }
 
