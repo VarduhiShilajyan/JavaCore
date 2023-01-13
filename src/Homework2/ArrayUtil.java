@@ -10,7 +10,11 @@ public class ArrayUtil {
                 System.out.print(",");
             }
         }
+
+
         System.out.println();
+
+
         // տպել մեծ թիվը
         int max = array[0];
         for (int i = 0; i < array.length; i++) {
@@ -19,6 +23,9 @@ public class ArrayUtil {
             }
         }
         System.out.println("max: " + max);
+
+        System.out.println();
+
 
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
@@ -48,7 +55,7 @@ public class ArrayUtil {
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                System.out.println(array[i]);
+                System.out.print(array[i]+ ", ");
             }
 
         }
@@ -57,11 +64,10 @@ public class ArrayUtil {
         // տպել կենտ էլեմենտները
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 1) {
-                System.out.println(array[i]);
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i]+ " ,");
             }
         }
-
 
         System.out.println();
 
