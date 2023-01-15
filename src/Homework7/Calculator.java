@@ -3,8 +3,8 @@ package Homework7;
 public class Calculator {
     void plusOfCalculator(double i, double j) {
         double plus = i + j;
-        System.out.println("գումարը հավասարէ " + plus);
-        System.out.println();
+        System.out.println("գումարը հավասար է " + plus);
+
     }
 
 
@@ -17,8 +17,8 @@ public class Calculator {
 
     void minusOfCalculator(double i, double j) {
         double minus = i - j;
-        System.out.println(" տարբերությունը հավասար է  " + minus);
-        System.out.println();
+        System.out.println("տարբերությունը հավասար է  " + minus);
+
 
     }
 
