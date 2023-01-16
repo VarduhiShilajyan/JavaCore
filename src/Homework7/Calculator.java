@@ -1,38 +1,27 @@
 package Homework7;
 
 public class Calculator {
-    void plusOfCalculator(double i, double j) {
-        double plus = i + j;
-        System.out.println("գումարը հավասար է " + plus);
-
+    double plus(double num1, double num2) {
+        return num1 + num2;
     }
 
-
-    void multiplyOfCalculator(double i, double j) {
-        double multiply = i * j;
-        System.out.print("արտադրյալը հավասար է   " + multiply);
-        System.out.println();
+    double minus(double num1, double num2) {
+        return num1 - num2;
     }
 
-
-    void minusOfCalculator(double i, double j) {
-        double minus = i - j;
-        System.out.println("տարբերությունը հավասար է  " + minus);
-
-
+    double multiply(double num1, double num2) {
+        return num1 * num2;
     }
 
+    double divide(double num1, double num2) {
+        if (num2 == 0) {
+            System.out.println("the number is not divisible by 0");
+            return -1;
+        }
+        return num1 / num2;
 
-    void divideOfCalculator(double i, double j) {
-        double divide = i / j;
-        System.out.println("քանորդը հավասարն է  " + divide);
     }
 }
-
-
-
-
-
 
 
 
