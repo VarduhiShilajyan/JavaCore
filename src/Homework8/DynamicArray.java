@@ -16,9 +16,12 @@ public class DynamicArray {
 
     private void extend() {//հին մասիվի սսիլկան կապում ենք նոր ստեղծվածի հետ, ստեղծվել է tmp ժամանակավոր փոփոխական
         int[] tmp = new int[array.length + 10];
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++) {
             tmp[i] = array[i];
+        }
+        array = tmp;
     }
+
 
     public int getByIndex(int index) {
         if (index > 0 && index < array.length) {
