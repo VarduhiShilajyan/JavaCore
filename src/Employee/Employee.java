@@ -1,5 +1,6 @@
 package Employee;
 
+import java.nio.charset.Charset;
 import java.util.Objects;
 
 public class Employee {
@@ -46,4 +47,23 @@ public class Employee {
                 ", position='" + position + '\'' +
                 '}';
     }
+
+    public String getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(String employeeID) {
+        this.employeeID = employeeID;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
 }
+
+
+

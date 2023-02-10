@@ -10,10 +10,10 @@ public class EmployeeDemo {
 
         while (isRun) {
             System.out.println("Please input 0 for exit");
-            System.out.println("Please input 1 for add a employee");
+            System.out.println("Please input 1 for add employee");
             System.out.println("Please input 2 for to find all");
-            System.out.println("Please input 3 for find a employee with ID ");
-            System.out.println("Please input 4 for fide a employee with name of company ");
+            System.out.println("Please input 3 for find employee with ID ");
+            System.out.println("Please input 4 for find employee with name of company ");
             String command = scanner.nextLine();
             switch (command) {
                 case "0":
@@ -34,12 +34,23 @@ public class EmployeeDemo {
                     String position = scanner.nextLine();
                     Employee employee = new Employee(name, surname, employeeID, salary, company, position);
                     employeeStorage.add(employee);
+                    System.out.println("Employee is created");
                 case "2":
                     employeeStorage.print();
                     break;
                 case "3":
                     System.out.println("Please input keyword");
                     String keyword = scanner.nextLine();
+                    employeeStorage.searchByID(keyword);
+                    break;
+                case "4":
+                    System.out.println("Please input letter ");
+                    String keywordCompany = scanner.nextLine();
+                    employeeStorage.searchByCompanyName(keywordCompany);
+
+                case "5":
+                    System.out.println("Please input employee ID");
+                    String ID = scanner.nextLine();
                     break;
                 default:
                     System.out.println("Please try again");

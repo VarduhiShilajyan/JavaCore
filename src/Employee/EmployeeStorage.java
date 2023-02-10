@@ -25,12 +25,44 @@ public class EmployeeStorage {
 
     public void print() {// տպում ենք ավելացրած էլեմենտները
         for (int i = 0; i < size; i++) {
-            System.out.print(array[i] + ", ");
+            System.out.println(array[i] + ", ");
         }
+
 
     }
 
 
+    public void searchByID(String keyword) {
+        boolean found = false;
+        for (int i = 0; i < size; i++) {
+            Employee employee = array[i];
+            if (employee.getEmployeeID().contains(keyword)) {
+                found = true;
+                System.out.println(employee);
+
+            }
+
+        }
+        if (!found) {
+            System.out.println(" Employee" + keyword + "does not exist");
+        }
+    }
+
+    public void searchByCompanyName(String keywordCompany) {
+        boolean found = false;
+        for (int i = 0; i < size; i++) {
+            Employee employee = array[i];
+            if (employee.getCompany().contains(keywordCompany)) {
+                found = true;
+                System.out.println(employee);
+            }
+            if (!found) {
+                System.out.println("Employee " + keywordCompany + "does not find");
+            }
+
+
+        }
+    }
 }
 
 
